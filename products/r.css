@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+background-color: antiquewhite;    font-family: Arial, Helvetica, sans-serif;
+}
+.image{
+    background-image: url(pexels-brettjordan-825661.jpg);
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* تعيين الحاوية الأم كـ relative */
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+}
+a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+p{
+    font-weight: bold;
+    font-size: 24px;
+}
+.mo{
+    background-color: #8fd53f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.mo:hover {
+    background-color: #7aba35;
+}
+.d {
+    color: white;
+    position: absolute;
+    right: 530px; /* تحريك النص بمقدار 100 بكسل من اليمين */
+}
+span{
+    font-size: 53px;
+    position: absolute;
+top: 33px;
+}
+.d a{
+    position: absolute;
+    top: 96px;
+    left: 33px;
+    width: 105px;
+    color: white;
+    border: 2px solid honeydew;
+    border-radius: 22px;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+}
+.d a:hover{
+    position: absolute;
+    top: 96px;
+    left: 33px;
+    width: 105px;
+    color: white;
+    border: 2px solid honeydew;
+    border-radius: 22px;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+    background-color: bisque;
+   
+}
+.sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 11px;
+    padding: 11px;
+    color: black;
+   animation-name: change;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+}
+.sec p{
+    padding: 11px;
+}
+.l,
+.o{
+    opacity: .5;
+}
+@keyframes change{
+    from{
+        color: black;
+
+    }
+    to{
+        opacity: .5;
+    }
+}
+i{
+    font-size: 50px; /* تكبير الأيقونة */
+position: relative;
+    left: 0;
+    animation-name: v;
+    animation-duration: 6s;
+animation-iteration-count: infinite;
+
+}
+@keyframes v{
+    to{
+        left: 1299px;
+    }
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* المسافة بين الأعمدة */
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+
+}
+.product{
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.product img{
+   max-width: 100%;
+}
+.product img:hover{
+    max-width: 100%;
+    transform:scale(.9) ;
+    -webkit-transform:scale(.9) ;
+    -moz-transform:scale(.9) ;
+    -ms-transform:scale(.9) ;
+    -o-transform:scale(.9) ;
+}
